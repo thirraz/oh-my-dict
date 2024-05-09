@@ -1,19 +1,11 @@
 import { useQuery } from "@tanstack/react-query"
-
-async function fetchData() {
-	const res = await fetch(
-		"https://api.dictionaryapi.dev/api/v2/entries/en/error"
-	)
-
-	const data = await res.json()
-
-	return data
-}
+import { fetchWord } from "../features/dict/fetchWord"
+import { API_URL } from "../helpers/constants"
 
 export function useFetch() {
 	const { data, isPending } = useQuery({
 		queryKey: ["word"],
-		queryFn: fetchData
+		queryFn: () => fetchWord(API_URL)
 	})
 
 	return { data, isPending }
