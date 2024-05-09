@@ -1,0 +1,16 @@
+licence: licensa de alguma coisa
+meanings: array com objetos que têm as seguintes propriedades:
+  {
+    partOfSpeech: a classe gramatical
+    definitions: um array com as definições de uma palavra, 
+    synonyms: os sinônimos da palavra desejada
+    antonyms: os antônimos da palavra desejada 
+  }
+phonetics: array de objetos com as seguintes propriedades:
+  {
+    audio: um áudio de um robô falando a palavra desejada 
+    text: a origem da palavra (em forma de escrita)
+  }
+sourceUrls: um link para uma wiki de palavras
+word: a palavra desejada
+

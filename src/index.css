@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "Geist,sans-serif";
+	src: url("./assets/fonts/geist/Geist-Regular.otf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Geist,sans-serif";
+	src: url("./assets/fonts/geist/Geist-Bold.otf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Geist,sans-serif";
+	src: url("./assets/fonts/geist/Geist-Light.otf");
+	font-weight: 300;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
