@@ -3,7 +3,9 @@ import { useFetch } from "./hooks/useFetch"
 export default function App() {
 	const { data, isPending } = useFetch()
 
-	if (isPending) console.log("loading...")
+	if (isPending) {
+		return <p>LOADING...</p>
+	}
 	console.log(data)
 
 	return (
